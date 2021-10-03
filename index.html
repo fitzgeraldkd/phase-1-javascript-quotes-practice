@@ -11,10 +11,23 @@
 </head>
 <body class='container center'>
   <h1>My favorite quotes:</h1>
+  <button class='btn-secondary' id='sort'>Sort By Author</button>
   <div>
     <ul id="quote-list">
     </ul>
   </div>
+  <form id="update-quote-form" style="display: none;">
+    <hr>
+    <div class="form-group">
+      <label for="updated-quote">Updated Quote</label>
+      <input name="quote" type="text" class="form-control" id="updated-quote" placeholder="Learn. Love. Code.">
+    </div>
+    <div class="form-group">
+      <label for="updated-author">Author</label>
+      <input name="author" type="text" class="form-control" id="updated-author" placeholder="Flatiron School">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Submit">
+  </form>
   <hr>
   <div>
     <form id="new-quote-form">
